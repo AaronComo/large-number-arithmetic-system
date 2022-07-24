@@ -2,7 +2,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
-#include <time.h>
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
@@ -25,7 +24,7 @@ Array input(void);
 char separate(Array a, Array* array1, Array* array2);
 
 
-bool transform(Array* array1, Array* array2, int* max_size, int* min_size, char** dst, char** src, char sign);//é”Ÿè?—å‡¤æ‹?'0' ~ '9'è½?ä¸?'\x0' ~ '\x9'
+bool transform(Array* array1, Array* array2, int* max_size, int* min_size, char** dst, char** src, char sign);//é”Ÿï¿½?ï¿½å‡¤ï¿½?'0' ~ '9'ï¿½?ï¿½?'\x0' ~ '\x9'
 
 Array plus(Array array1, Array array2, char sign);
 Array subtract(Array array1, Array array2, char sign);
