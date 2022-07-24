@@ -157,9 +157,7 @@ int main()
 				}
 				system("cls");
 				printf("\n请输入计算式：%s+%s=", array1.array, array2.array);
-				start = clock();
 				plus(array1, array2, '+');
-				stop = clock();
 				printf("\n");
 				break;
 			case '-':
@@ -171,10 +169,8 @@ int main()
 				}
 				system("cls");
 				printf("\n请输入计算式：%s-%s=", array1.array, array2.array);
-				start = clock();
-				subtract(array1, array2, '-');
-				stop = clock();
-				printf("\n");
+                subtract(array1, array2, '-');
+                printf("\n");
 				break;
 			case '*':
 				system("cls");
@@ -185,9 +181,7 @@ int main()
 				}
 				system("cls");
 				printf("\n请输入计算式：%s*%s=", array1.array, array2.array);
-				start = clock();
 				multiply(array1, array2);
-				stop = clock();
 				printf("\n");
 				break;
 			case '/':
@@ -199,16 +193,12 @@ int main()
 				}
 				system("cls");
 				printf("\n请输入计算式：%s/%s=", array1.array, array2.array);
-				start = clock();
 				divide(array1, array2);
-				stop = clock();
 				printf("\n");
 				break;
 			default:
 				break;
 			}
-			end_time = ((double)(stop - start)) / CLK_TCK;
-			printf("运算在 %fs 内完成，按任意键返回主界面。", end_time);
 			for (i = 0; i < 22; i++)
 			{
 				printf("\n");
