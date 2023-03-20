@@ -4,7 +4,7 @@
 
 - Notice:
 
-    - This program has imported <window.h>, so it can only run on Windows platforms.
+    - This program has imported <windows.h>, so it can only run on Windows platforms.
 
     - File encoding: GB2312.
     - Known bug: overflow will occur when dividing two very different numbers.
